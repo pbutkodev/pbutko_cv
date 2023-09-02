@@ -1,6 +1,6 @@
 import StarsBackground from "../StarsBackground/Stars";
 import {StyledPageContainer} from "../../styles/styles";
-import {Background} from "../background";
+import {Background} from "../Background";
 
 export const PageLayout = ({
   children,
