@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pbutko_cv/static/css/main.80b21aff.css",
+    "main.js": "/pbutko_cv/static/js/main.196177e3.js",
+    "static/media/im.jpg": "/pbutko_cv/static/media/im.123fcc916cc7cec2343a.jpg",
+    "static/media/Roboto600.ttf": "/pbutko_cv/static/media/Roboto600.ff070ffd2fc570ae3b33.ttf",
+    "static/media/Roboto400.ttf": "/pbutko_cv/static/media/Roboto400.aa72efe9609a87016b7b.ttf",
+    "static/media/Roboto300.ttf": "/pbutko_cv/static/media/Roboto300.232a172f65a3a716ba55.ttf",
+    "static/media/cairo-300.ttf": "/pbutko_cv/static/media/cairo-300.1e409619359b7fb0577c.ttf",
+    "static/media/3.jpg": "/pbutko_cv/static/media/3.37e6034b8a5e9923fb10.jpg",
+    "static/media/cairo-600.woff2": "/pbutko_cv/static/media/cairo-600.3b49fe86e856430b5ffd.woff2",
+    "static/media/cairo-500.woff2": "/pbutko_cv/static/media/cairo-500.eacd0c47a9f55c7ec48b.woff2",
+    "static/media/cairo-700.woff2": "/pbutko_cv/static/media/cairo-700.7bb0213beec71decfd52.woff2",
+    "static/media/cairo-regular.woff2": "/pbutko_cv/static/media/cairo-regular.97f0fb613842a2410db0.woff2",
+    "index.html": "/pbutko_cv/index.html",
+    "main.80b21aff.css.map": "/pbutko_cv/static/css/main.80b21aff.css.map",
+    "main.196177e3.js.map": "/pbutko_cv/static/js/main.196177e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80b21aff.css",
+    "static/js/main.196177e3.js"
+  ]
+}
