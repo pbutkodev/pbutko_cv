@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pbutko_cv/static/css/main.80b21aff.css",
+    "main.css": "/pbutko_cv/static/css/main.7feeaf3f.css",
     "main.js": "/pbutko_cv/static/js/main.196177e3.js",
     "static/media/im.jpg": "/pbutko_cv/static/media/im.123fcc916cc7cec2343a.jpg",
     "static/media/Roboto600.ttf": "/pbutko_cv/static/media/Roboto600.ff070ffd2fc570ae3b33.ttf",
@@ -13,11 +13,11 @@
     "static/media/cairo-700.woff2": "/pbutko_cv/static/media/cairo-700.7bb0213beec71decfd52.woff2",
     "static/media/cairo-regular.woff2": "/pbutko_cv/static/media/cairo-regular.97f0fb613842a2410db0.woff2",
     "index.html": "/pbutko_cv/index.html",
-    "main.80b21aff.css.map": "/pbutko_cv/static/css/main.80b21aff.css.map",
+    "main.7feeaf3f.css.map": "/pbutko_cv/static/css/main.7feeaf3f.css.map",
     "main.196177e3.js.map": "/pbutko_cv/static/js/main.196177e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.80b21aff.css",
+    "static/css/main.7feeaf3f.css",
     "static/js/main.196177e3.js"
   ]
 }
