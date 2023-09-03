@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "pbutko_cv",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://pbutkodev.github.io/pbutko_cv/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
