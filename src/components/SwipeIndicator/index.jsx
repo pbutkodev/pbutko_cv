@@ -33,7 +33,7 @@ const Circle = styled.div`
   animation: swipe 2.2s ease-out infinite;
 `;
 
-const Container = styled.div`
+const ContainerSwipe = styled.div`
   width: 28px;
   height: 65px;
   border-radius: 27px;
@@ -48,8 +48,8 @@ const Container = styled.div`
 `;
 
 const Swipe = () => (
-  <Container>
+  <ContainerSwipe>
     <Circle />
-  </Container>
+  </ContainerSwipe>
 );
 export default Swipe;

@@ -12,9 +12,9 @@ const GlitchH1 = ({text}) => {
 	const h1 = useGlitchTypewriter(text, 15);
 	return <h1>{h1}</h1>;
 };
-const GlitchH2 = ({text}) => {
+const GlitchH2 = ({text, style}) => {
 	const h2 = useGlitchTypewriter(text, 20);
-	return <h2>{h2}</h2>;
+	return <h2 style={style}>{h2}</h2>;
 };
 
 export const AboutMe = () => {
@@ -32,7 +32,7 @@ export const AboutMe = () => {
 
 	return (
 		<LazyMotion features={domAnimation}>
-			<StyledContainer>
+			<StyledContainer id={"about_me"}>
 				{showText && (
 					<StyledViewContainer>
 						<Container
@@ -42,22 +42,36 @@ export const AboutMe = () => {
 							justify="space-between"
 							className="main-screen-texts"
 						>
-							<StyledFragment>
-								<GlitchH1 text={'PAVEL BUTKO'}/>
-								<GlitchH2 text={'WEB DEVELOPER'}/>
-							</StyledFragment>
-							{!isMobile && <StyledFragment>
-								<img
-									src={im}
-									alt="im"
-									style={{
-										height: 400,
-										borderRadius: 12
-									}}
-								/>
-							</StyledFragment>}
+							{isMobile && (
+								<>
+									<StyledFragment>
+										<GlitchH1 text={'PAVEL BUTKO'}/>
+										<GlitchH2 text={'WEB DEVELOPER'}/>
+									</StyledFragment>
+								</>
+							)}
+							{
+								!isMobile && (
+									<>
+										<StyledFragment>
+											<GlitchH1 text={'PAVEL BUTKO'}/>
+											<GlitchH2 text={'WEB DEVELOPER'}/>
+										</StyledFragment>
+										<StyledFragment>
+											<img
+												src={im}
+												alt="im"
+												style={{
+													height: 400,
+													borderRadius: 12
+												}}
+											/>
+										</StyledFragment>
+									</>
+								)
+							}
 						</Container>
-						<Swipe />
+						{!isMobile && <Swipe/>}
 					</StyledViewContainer>
 				)}
 			</StyledContainer>

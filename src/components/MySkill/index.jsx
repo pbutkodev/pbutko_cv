@@ -7,12 +7,12 @@ const variants = {
 	down: {top: "50px", opacity: 0, transform: "scale(1.1)"},
 };
 
-export const MySkill = ({items, title, id}) => {
+export const MySkill = ({items, title, variant, id}) => {
 	const mySkillRef = useRef(null);
 	const isInView = useInView(mySkillRef, {once: true});
 
 	return (
-		<ContainerMySkill>
+		<ContainerMySkill id={id} $minHeight={title === 'EDUCATION' && '400px'}>
 			<ContentMySkill
 				transition={{type: "tween", stiffness: 100, duration: 0.5}}
 				animate={isInView ? "up" : "down"}
@@ -25,12 +25,12 @@ export const MySkill = ({items, title, id}) => {
 						return (
 							<>
 								{el.name && <h2>{el.name}</h2>}
-								<div className={id === 1 ? 'skills' : id === 0 ? 'about-me' : ''}>
+								<div className={variant === 1 ? 'skills' : variant === 0 ? 'about-me' : ''}>
 									{el.elements.map((elem, i, array) =>
 										<p>
-											{id === 0 && <span>{'-'}</span>}
+											{variant === 0 && <span>{'-'}</span>}
 											{elem}
-											{id === 1 && 'skills' && i + 1 < array.length && ','}
+											{variant === 1 && 'skills' && i + 1 < array.length && ','}
 										</p>
 									)}
 								</div>

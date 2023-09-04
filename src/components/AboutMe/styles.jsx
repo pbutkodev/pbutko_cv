@@ -40,6 +40,9 @@ export const StyledContainer = styled.div`
   height: auto;
   box-sizing: border-box;
   @media (max-width: 900px) {
+		justify-content: center;
+		align-items: center;
+		
     & .main-screen-texts {
       padding-top: 97px;
     }

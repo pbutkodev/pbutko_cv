@@ -9,7 +9,7 @@ export const ContainerMySkill = styled.div`
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  min-height: 70vh;
+  min-height: ${(props) => `${props.$minHeight ||  '70vh'}`};
   overflow: hidden;
 
   & .scroll-ref {
@@ -51,10 +51,15 @@ export const ContainerMySkill = styled.div`
   }
 
   & h3 {
+		text-align: center;
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;
     text-transform: uppercase;
+		width: 100%;
+    @media (max-width: 900px) {
+      font-size: 30px;
+		}
   }
 
   & hr {
@@ -64,6 +69,9 @@ export const ContainerMySkill = styled.div`
     border: 0;
     margin-top: 30px;
     margin-bottom: 64px;
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
   }
 
   & .skills {
@@ -108,7 +116,5 @@ export const ContentMySkill = styled(motion.div)`
   @media (max-width: 900px) {
     box-sizing: border-box;
     padding: 48px 24px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
   }
 `;
